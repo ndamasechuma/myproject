@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flyzy Travel Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Flyzy Travel Manager Chatbot</h1>
+
+  <h2>Add New Booking</h2>
+  <form id="bookingForm">
+    <input type="number" id="id" placeholder="Booking ID" required>
+    <input type="text" id="type" placeholder="Type (Flight/Hotel/Cab)" required>
+    <input type="text" id="customerName" placeholder="Customer Name" required>
+    <input type="text" id="details" placeholder="Details" required>
+    <input type="text" id="status" placeholder="Status (Confirmed/Pending)" required>
+    <button type="submit">Add Booking</button>
+  </form>
+
+  <h2>Bookings List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Details</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="bookingsTable">
+      <!-- Rows will be populated via JavaScript -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
