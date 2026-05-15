@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Manager Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Travel Manager Chatbot</h1>
+
+    <!-- Booking Form -->
+    <form id="bookingForm">
+        <input type="text" id="customerName" placeholder="Customer Name" required>
+        <input type="text" id="flightNumber" placeholder="Flight Number" required>
+        <input type="text" id="hotelName" placeholder="Hotel Name" required>
+        <input type="date" id="bookingDate" required>
+        <button type="submit">Add Booking</button>
+    </form>
+
+    <!-- Bookings Table -->
+    <h2>All Bookings</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Customer Name</th>
+                <th>Flight Number</th>
+                <th>Hotel Name</th>
+                <th>Booking Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="bookingTableBody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
